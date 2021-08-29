@@ -11,7 +11,7 @@ Cypress.Commands.add('applicationLogin', (username, password) => {
      
 })
 
-Cypress.Commands.add('cookiesConsent', () => {
+Cypress.Commands.add('GDPRConsent', () => {
     cy.get('.fc-cta-consent  .fc-button-label')
         .click()
 })

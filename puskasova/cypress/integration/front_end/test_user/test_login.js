@@ -7,7 +7,7 @@ describe('Test Valid Login', () => {
     })
     
         cy.applicationLogin(Cypress.env('username'), Cypress.env('password'))
-        cy.cookiesConsent()          
+        cy.GDPRConsent()          
     })
 
     after(() => {

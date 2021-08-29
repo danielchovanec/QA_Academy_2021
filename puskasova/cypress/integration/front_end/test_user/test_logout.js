@@ -7,11 +7,11 @@ describe('Test Logout', () => {
     })
     
         cy.applicationLogin(Cypress.env('username'), Cypress.env('password'))
-        cy.cookiesConsent()
+        cy.GDPRConsent()
         cy.applicationLogout()          
     })
 
-    it('user login should be successful', () => {
+    it('user logout should be successful', () => {
         cy.get('.Headerstyles__Headline-tm4e6p-3')
             .should('have.text', 'Sme najväčšia  online komunita ľudí')
             .should('be.visible')
