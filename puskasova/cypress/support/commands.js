@@ -1,25 +1,29 @@
-// ***********************************************
-// This example commands.js shows you how to
-// create various custom commands and overwrite
-// existing commands.
-//
-// For more comprehensive examples of custom
-// commands please read more here:
-// https://on.cypress.io/custom-commands
-// ***********************************************
-//
-//
-// -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
-//
-//
-// -- This is a child command --
-// Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
-//
-//
-// -- This is a dual command --
-// Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
-//
-//
-// -- This will overwrite an existing command --
-// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+Cypress.Commands.add('applicationLogin', (username, password) => {
+    cy.visit('/')
+    cy.get('.LoginFormstyles__LoginButton-sc-1iebk76-2')
+        .click()
+    cy.get('.Form-sc-1mfmq26-0  :nth-child(1)  .Input-sc-1vv8hqf-0')
+        .type(username)
+    cy.get('.LoginFormstyles__PasswordInputArea-sc-1iebk76-7  .Input-sc-1vv8hqf-0')
+        .type(password)
+    cy.get('.LoginFormstyles__MobileLoginMiddlePanel-sc-1iebk76-12  .Form-sc-1mfmq26-0  .Button-sc-1fngo4c-0')
+        .click()
+     
+})
+
+Cypress.Commands.add('cookiesConsent', () => {
+    cy.get('.fc-cta-consent  .fc-button-label')
+        .click()
+})
+
+Cypress.Commands.add('applicationLogout',() => {
+    cy.get('.mi-ic-menu')
+        .click()
+    cy.get('.link-logout')
+        .click()
+})
+
+Cypress.Commands.add('roomRedirection', () => {
+    cy.get('[href="https://pokec-sklo.azet.sk/miestnost/1/"]  .sc-bAeIUo')
+        .click()
+    })
