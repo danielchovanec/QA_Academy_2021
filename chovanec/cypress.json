@@ -1,1 +1,11 @@
-{}
+{
+    "baseUrl": "https://pokec.azet.sk/",
+    "defaultCommandTimeout": 3000,
+    "chromeWebSecurity": false,
+    "env": {
+        "username": "Glum45",
+        "password": "Glum45Glum45",
+        "incorrect_username": "Gandalf20",
+        "incorrect_password": "Gandalf20"
+    }
+}
