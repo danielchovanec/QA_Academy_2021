@@ -1,13 +1,11 @@
 {
-    "baseUrl": "https://prihlasenie.azet.sk/?project=azet&uri=https%3A%2F%2Fwww.azet.sk%2F#azetbutton",
-    "defaultCommandTimeout": 3000,
-    "pageLoadTimeout": 70000,
+    "baseUrl": "https://pokec.azet.sk/",
     "chromeWebSecurity": false,
     "env": {
         "username": "ZmoknutyJakPes",
-        "password": "TazkeHeslo123456"
+        "password": "TazkeHeslo123456",
+        "incorrectUsername": "ZmoknuteKurca",
+        "incorrectPassword": "FessNebezpecneHeslo"
+        
     }
-   
-
-
 }

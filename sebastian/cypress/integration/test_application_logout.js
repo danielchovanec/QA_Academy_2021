@@ -1,16 +1,15 @@
+describe('Test Valid Login', () => {
 
-
-describe('test valid Logout', () =>{
-    before(()=>{
+    before(() => {
         cy.applicationLogin(Cypress.env('username'), Cypress.env('password'))
-        cy.applicationLogOut()
+        cy.popUp()
+        cy.applicationLogout()
     })
+    
 
-    it('user logout should be successful', ()=> {
-        cy.get('.visible-md  :nth-child(1)  :nth-child(1)  .banner-customizable  center  .logo-customizable')
-            
-            .should('be.visible')
+    it('user login should be successful', ()=> {
+        cy.get('.LoginFormstyles__LoginButton-sc-1iebk76-2')
+        .should('be.visible')
     })
 
 })
-

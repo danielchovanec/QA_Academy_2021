@@ -1,50 +1,42 @@
-describe('test valid Login', () =>{
-    before(()=>{
-        cy.applicationLogin(Cypress.env('username'), Cypress.env('password'))
-    })
+describe('Test Valid Login', () => {
 
-    it('user login should be successful', ()=> {
-        cy.get('[data-cy=teamsTeamsHeaderLabel]')
-            .should('have.text','Matrix QA')
-        .should('be.visible')
+    before(() => {
+        cy.applicationLogin(Cypress.env('username'), Cypress.env('password'))
+        cy.popUp()
     })
     
-    after(()=>{
-        cy.applicationLogOut()
-    })
 
-})
-
-describe('test valid Login with corporation email', () =>{
-    before(()=>{
-        cy.visit('https://login-dev.matrix.report/login?client_id=6qpntb8qrhsilpu2m88ssroqek&response_type=code&scope=aws.cognito.signin.user.admin+email+openid+phone+profile&redirect_uri=https://dev.matrix.report/cognito')
-        cy.get('.panel-right-border  :nth-child(1)  :nth-child(1)  :nth-child(1)  form  :nth-child(2)  div  #socialSignUpCorporateEmail')
-            .type('sebastian.dimun@ness.com')
-        cy.get('.panel-right-border  :nth-child(1)  :nth-child(1)  :nth-child(1)  form  :nth-child(2)  div  .btn')
-            .click()
-    })
-    it('test corporation login',()=>{
-        cy.url().should('include','microsoftonline')
-    })
-
-})
-
-describe('test invalid Login with email and password', () =>{
-    before(()=>{
-        cy.applicationLogin('jankohrasko','asdasdasd' )
-    })
-    it('user login should be failed', ()=> {
-        cy.get('.panel-left-border  :nth-child(2)  :nth-child(1)  .cognito-asf > #loginErrorMessage')
-            // .should('have.text','The username or password you entered is invalid')
+    it('user login should be successful', ()=> {
+        cy.get('.sc-elJkPf > :nth-child(2) > .sc-eNQAEJ')
         .should('be.visible')
     })
+
 })
 
+describe('Test Invalid Login with incorrect username', () => {
 
+    before(() => {
+        cy.applicationLogin(Cypress.env('incorrectUsername'), Cypress.env('password'))
+    })
+    
 
+    it('user login should be failed', ()=> {
+        cy.get('.LoginFormstyles__MobileLoginMiddlePanel-sc-1iebk76-12 > .Form-sc-1mfmq26-0 > .Button-sc-1fngo4c-0')
+        .should('be.visible')
+    })
 
+})
 
+describe('Test Invalid Login with incorrect password', () => {
 
+    before(() => {
+        cy.applicationLogin(Cypress.env('username'), Cypress.env('incorrectPassword'))
+    })
+    
 
+    it('user login should be failed', ()=> {
+        cy.get('.LoginFormstyles__MobileLoginMiddlePanel-sc-1iebk76-12 > .Form-sc-1mfmq26-0 > .Button-sc-1fngo4c-0')
+        .should('be.visible')
+    })
 
-
+})
