@@ -1,0 +1,16 @@
+{
+  "name": "cypress-pokec",
+  "version": "1.0.0",
+  "description": "pokec.sk login/logout testing",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypres run"
+  },
+  "author": "Kristian Kovacs",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^8.3.1",
+    "prettier": "^2.3.2"
+  }
+}
