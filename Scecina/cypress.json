@@ -1,1 +1,10 @@
-{}
+{
+    "baseUrl": "https://pokec.azet.sk/",
+    "chromeWebSecurity": false,
+    "env": {
+        "username": "M4STERB8",
+        "password": "testheslo123",
+        "incorrect_username": "testingusername",
+        "incorrect_password": "testingpassword"
+    }
+}
