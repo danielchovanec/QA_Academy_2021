@@ -1,12 +1,12 @@
 {
-  "name": "stanohlivjak",
+  "name": "qa_academy_at",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "shlivjak",
+  "author": "StanislavHlivjak",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^8.3.0"
