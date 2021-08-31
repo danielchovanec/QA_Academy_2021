@@ -2,6 +2,8 @@ describe('Test Valid Login', () => {
 
     before(() => {
         cy.applicationLogin(Cypress.env('username'), Cypress.env('password'))
+        cy.get('.fc-cta-consent > .fc-button-label')
+            .click()
     });
 
     it('user Login should be successful', () => {
@@ -14,6 +16,8 @@ describe('Test Zoznamka', () => {
 
     before(() => {
         cy.applicationLogin(Cypress.env('username'), Cypress.env('password'))
+        cy.get('.fc-cta-consent > .fc-button-label')
+            .click()
         cy.get('[href="https://pokec-sklo.azet.sk/miestnost/1/"] > .sc-bAeIUo')
             .click()
     });
