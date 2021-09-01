@@ -1,0 +1,15 @@
+{
+    "baseUrl": "https://pokec.azet.sk/",
+    "defailtCommandTimeOut": 30000,
+    "pageLoadTimeout": 70000,
+    "chromeWebSecurity": false,
+    "modifyObstructiveCode": false,
+
+    "env":{
+        "username":"cyTestFake",
+        "password": "pokec123",
+        "invalidName": "badName",
+        "invalidPasswor": "badPassword"
+    }
+    
+}
