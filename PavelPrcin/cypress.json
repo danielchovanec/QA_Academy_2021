@@ -9,7 +9,8 @@
         "username":"cyTestFake",
         "password": "pokec123",
         "invalidName": "badName",
-        "invalidPasswor": "badPassword"
+        "invalidPasswor": "badPassword",
+        "apiUrl": "http://jsonplaceholder.typicode.com"
     }
     
 }
