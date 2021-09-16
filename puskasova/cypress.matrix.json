@@ -1,0 +1,13 @@
+{
+    "baseUrl": "https://dev.matrix.report",
+    "defaultCommandTimeout": 30000,
+    "pageLoadTimeout": 70000,
+    "chromeWebSecurity": false,
+    "env": {
+        "username": "Academyqa.superadmin@ness.com",
+        "password": "ndS5E2O9*BQZ5P0gP",
+        "incorrect_username": "fajnymail@fajnaadresa.com",
+        "incorrect_password": "fajneheslo",
+        "corporate_username": "kristina.puskasova@ness.com"
+    }
+}

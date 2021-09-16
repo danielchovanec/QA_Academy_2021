@@ -5,6 +5,7 @@
         "username": "HermionaGrangerova123",
         "password": "10bodovpreChrabromil",
         "incorrect_username": "vymysleneMeno",
-        "incorrect_password": "vymysleneHeslo"
+        "incorrect_password": "vymysleneHeslo",
+        "apiUrl": "http://jsonplaceholder.typicode.com"
     }
 }
