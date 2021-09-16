@@ -47,7 +47,7 @@ describe('Test POSTS endpoint for user[1] and user[11] ', () => {
         })
     })
 
-    it('assert response contains correct keys for user[10]', () => {
+    it('assert response contains correct keys for user[11]', () => {
         cy.getRequest('endpoints', 'posts')
         .then((resp)=> {
             const keys = resp.body[10]
@@ -55,7 +55,7 @@ describe('Test POSTS endpoint for user[1] and user[11] ', () => {
         })
     })
 
-    it('assert correct value in user[10] userID', () => {
+    it('assert correct value in user[11] userID', () => {
         cy.getRequest('endpoints', 'posts')
         .then((resp)=> {
             const userId = resp.body[10].userId
@@ -63,7 +63,7 @@ describe('Test POSTS endpoint for user[1] and user[11] ', () => {
         })
     })
 
-    it('assert correct value in user[10] id', () => {
+    it('assert correct value in user[11] id', () => {
         cy.getRequest('endpoints', 'posts')
         .then((resp)=> {
             const id = resp.body[10].id
