@@ -6,6 +6,7 @@
         "username": "Glum45",
         "password": "Glum45Glum45",
         "incorrect_username": "Gandalf20",
-        "incorrect_password": "Gandalf20"
+        "incorrect_password": "Gandalf20",
+        "apiUrl": "http://jsonplaceholder.typicode.com"
     }
 }
