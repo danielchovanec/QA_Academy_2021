@@ -18,19 +18,25 @@ describe('Test velocity completion rate page', () => {
         .should('have.text', 'Represents the percentage of story points completed against their commitment for every iteration')
     })
 
-    it('Team Velocity text visible', () => {
+    it('Team Velocity text visible with data', () => {
         cy.get('.Velocity_velocity_StatsRowWrapper__gsnpE > :nth-child(1) > [data-cy=uiStatsRowLabel]')
         .should('have.text', 'Team Velocity')
+        cy.get('.Velocity_velocity_StatsRowWrapper__gsnpE > :nth-child(1) > [data-cy=uiStatsRowValue]')
+        .should('have.text', '36.67')
     })
 
-    it('Team Commitment text is visible', () => {
+    it('Team Commitment text is visible with data', () => {
         cy.get('.Velocity_velocity_StatsRowWrapper__gsnpE > :nth-child(2) > [data-cy=uiStatsRowLabel]')
         .should('have.text', 'Team Commitment')
+        cy.get('.Velocity_velocity_StatsRowWrapper__gsnpE > :nth-child(2) > [data-cy=uiStatsRowValue]')
+        .should('have.text','48.17')
     })
 
-    it('Sprint Completion Rate test is visible and expressed by %', () => {
+    it('Sprint Completion Rate test is visible with data and expressed by %', () => {
         cy.get('.Velocity_velocity_StatsRowWrapper__gsnpE > [data-cy=uiStatsProgress] > [data-cy=uiStatsRow] > [data-cy=uiStatsRowLabel]')
         .should('have.text', 'Sprint Completion Rate')
+        cy.get('.Velocity_velocity_StatsRowWrapper__gsnpE > [data-cy=uiStatsProgress] > [data-cy=uiStatsRow] > [data-cy=uiStatsRowValue]')
+        .should('have.text', '76.08%')
         cy.get('.Velocity_velocity_StatsRowWrapper__gsnpE > [data-cy=uiStatsProgress] > [data-cy=uiStatsRow] > [data-cy=uiStatsRowValue]')
         .should('contain', '%')
     })
