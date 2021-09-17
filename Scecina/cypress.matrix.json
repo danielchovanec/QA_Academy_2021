@@ -10,6 +10,9 @@
         "testUsername": "test",
         "testPassword": "test",
         "mailLogin": "erik.scecina@ness.com",
-        "apiURL": "http://jsonplaceholder.typicode.com"
+        "apiURL": "http://jsonplaceholder.typicode.com",
+        "OauthTokenURL": "https://cognito-idp.eu-central-1.amazonaws.com/",
+        "clientId": "6qpntb8qrhsilpu2m88ssroqek",
+        "aggregatorURL": "https://aggregator-dev.matrix.report"
     }
 }
