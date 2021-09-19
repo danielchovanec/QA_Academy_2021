@@ -15,6 +15,7 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
-
+import './commands_request'
+import './commands_matrix_backend'
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

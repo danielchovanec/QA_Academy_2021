@@ -3,8 +3,8 @@
     "defaultCommandTimeout": 30000,
     "pageLoadTimeout": 70000,
     "chromeWebSecurity": false,
-    "env":{
+    "env": {
         "username": "academyqa.superadmin@ness.com",
         "password": "ndS5E2O9*BQZ5P0gP"
     }
-} 
+}
