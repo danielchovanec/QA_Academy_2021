@@ -27,7 +27,7 @@ describe('Test velocity completion rate page', () => {
             .should('have.text', 'Represents the percentage of story points completed against their commitment for every iteration')
     });
 
-    it.only('canvas', () => {
+    it('canvas', () => {
         cy.get('[data-cy=teamVelocityChart] > [data-cy=uiBarChart]')
             .then((resp) => {
                 console.log(resp)
