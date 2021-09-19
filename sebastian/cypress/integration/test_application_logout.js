@@ -1,7 +1,7 @@
 describe('Test Valid Login', () => {
 
     before(() => {
-        cy.applicationLogin(Cypress.env('username'), Cypress.env('password'))
+        cy.applicationLogin(Cypress.env('usernameAzet'), Cypress.env('passwordAzet'))
         cy.popUp()
         cy.applicationLogout()
     })

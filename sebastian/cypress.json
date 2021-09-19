@@ -1,11 +1,20 @@
-{
-    "baseUrl": "https://pokec.azet.sk/",
+{    
+    "baseUrl": "https://dev.matrix.report/",
+    "defaultCommandTimeout": 3000,
+    "pageLoadTimeout": 70000,
     "chromeWebSecurity": false,
     "env": {
-        "username": "ZmoknutyJakPes",
-        "password": "TazkeHeslo123456",
+        "usernameAzet": "ZmoknutyJakPes",
+        "passwordAzet": "TazkeHeslo123456",
         "incorrectUsername": "ZmoknuteKurca",
-        "incorrectPassword": "FessNebezpecneHeslo"
-        
+        "incorrectPassword": "FessNebezpecneHeslo",
+        "username": "academyqa.superadmin@ness.com",
+        "password": "ndS5E2O9*BQZ5P0gP",
+        "apiUrl": "http://jsonplaceholder.typicode.com",
+        "OauthTokenURL": "https://cognito-idp.eu-central-1.amazonaws.com/",
+        "clientId": "6qpntb8qrhsilpu2m88ssroqek",
+        "aggregatorURL": "https://aggregator-dev.matrix.report",
+        "aws_team_id": "41224a47-d230-45e6-ac24-46bb9fcd4e72"
+  
     }
 }

@@ -1,7 +1,10 @@
+
+// change base url for pokec tests  "baseUrl": "https://pokec.azet.sk/",
+
 describe('Test Valid Join to DatingRoom', () => {
 
     before(() => {
-        cy.applicationLogin(Cypress.env('username'), Cypress.env('password'))
+        cy.applicationLogin(Cypress.env('usernameAzet'), Cypress.env('passwordAzet'))
         cy.popUp()
         cy.applicationJoinToRoom()
     })

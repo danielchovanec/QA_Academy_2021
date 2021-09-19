@@ -1,7 +1,7 @@
 describe('Test Valid Login', () => {
 
     before(() => {
-        cy.applicationLogin(Cypress.env('username'), Cypress.env('password'))
+        cy.applicationLogin(Cypress.env('usernameAzet'), Cypress.env('passwordAzet'))
         cy.popUp()
     })
     
@@ -16,7 +16,7 @@ describe('Test Valid Login', () => {
 describe('Test Invalid Login with incorrect username', () => {
 
     before(() => {
-        cy.applicationLogin(Cypress.env('incorrectUsername'), Cypress.env('password'))
+        cy.applicationLogin(Cypress.env('incorrectUsername'), Cypress.env('passwordAzet'))
     })
     
 
@@ -30,7 +30,7 @@ describe('Test Invalid Login with incorrect username', () => {
 describe('Test Invalid Login with incorrect password', () => {
 
     before(() => {
-        cy.applicationLogin(Cypress.env('username'), Cypress.env('incorrectPassword'))
+        cy.applicationLogin(Cypress.env('usernameAzet'), Cypress.env('incorrectPassword'))
     })
     
 
