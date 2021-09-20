@@ -18,10 +18,6 @@ describe('Test Velocity Completion Rate Metric', () => {
             .should('have.text', 'Represents the percentage of story points completed against their commitment for every iteration')
     })
 
-    // it('Canvas Chart should contain GOAL Lane, Benchmark, Trend and Completion Rate fields', () => {
-    //     cy.get('[data-cy=teamVelocityChart]')
-    //         .should('have.text', 'Goal')
-    // })
 
     it('Team Velocity text should be displayed next to velocity data', () => {
         cy.get('.Velocity_velocity_StatsRowWrapper__gsnpE > :nth-child(1) > [data-cy=uiStatsRowLabel]')
