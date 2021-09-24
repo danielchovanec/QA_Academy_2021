@@ -1,5 +1,5 @@
 {
-    "baseUrl": "https://dev.matrix.report/",
+    "baseUrl": "https://mail.azet.sk/inbox/dorucene?i9=60ca750c9f33",
     "defaultCommandTimeout": 3000,
     "chromeWebSecurity": false,
     "env": {
@@ -7,6 +7,8 @@
         "password": "ndS5E2O9*BQZ5P0gP",
         "usernamePokec": "Glum45",
         "passwordPokec": "Glum45Glum45",
+        "usernamePokecStevo": "bbeni",
+        "passwordPokecStevo": "poloma561",
         "incorrect_username": "Gandalf20",
         "incorrect_password": "Gandalf20",
         "apiUrl": "http://jsonplaceholder.typicode.com"
