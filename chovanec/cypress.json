@@ -1,5 +1,5 @@
 {
-    "baseUrl": "https://mail.azet.sk/inbox/dorucene?i9=60ca750c9f33",
+    "baseUrl": "https://pokec.azet.sk",
     "defaultCommandTimeout": 3000,
     "chromeWebSecurity": false,
     "env": {
