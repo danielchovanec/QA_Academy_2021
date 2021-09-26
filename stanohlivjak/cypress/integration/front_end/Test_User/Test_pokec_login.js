@@ -1,21 +1,20 @@
 describe('Test Valid Login', () => {
 
     before(() => {
-        cy.applicationLogin(Cypress.env('username'), Cypress.env('password'))
-        cy.get('.fc-cta-consent > .fc-button-label')
-            .click()
+        cy.pokecApplicationLogin(Cypress.env('username'), Cypress.env('password'))
+        // cy.get('.fc-cta-consent > .fc-button-label')
+        //     .click()
     });
 
     it('user Login should be successful', () => {
-        cy.get('.sc-lhVmIH')
-            .should('be.visible')
+
     });
 })
 
-describe('Test Zoznamka', () => {
+describe.skip('Test Zoznamka', () => {
 
     before(() => {
-        cy.applicationLogin(Cypress.env('username'), Cypress.env('password'))
+        cy.pokecApplicationLogin(Cypress.env('username'), Cypress.env('password'))
         cy.get('.fc-cta-consent > .fc-button-label')
             .click()
         cy.get('[href="https://pokec-sklo.azet.sk/miestnost/1/"] > .sc-bAeIUo')
@@ -28,7 +27,7 @@ describe('Test Zoznamka', () => {
     });
 })
 
-describe('Test Invalid Login', () => {
+describe.skip('Test Invalid Login', () => {
 
     before(() => {
         cy.applicationLogin('email@test.test', 'password')
