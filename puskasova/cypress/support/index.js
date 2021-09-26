@@ -14,7 +14,7 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
+import './commands_jira_metrics'
 import './commands_requests'
 import './commands_Pokec'
 

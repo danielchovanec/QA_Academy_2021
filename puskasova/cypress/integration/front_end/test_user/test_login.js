@@ -6,12 +6,12 @@ describe('Test Valid Login', () => {
             return false;
     })
     
-        cy.applicationLogin(Cypress.env('username'), Cypress.env('password'))
+        cy.applicationLoginPokec(Cypress.env('username'), Cypress.env('password'))
         cy.GDPRConsent()          
     })
 
     after(() => {
-        cy.applicationLogout()
+        cy.applicationLogoutPokec()
     })
 
     it('user login should be successful', () => {
@@ -25,7 +25,7 @@ describe('Test Valid Login', () => {
 describe('Test Invalid Login', () => {
 
     before(() => {
-    cy.applicationLogin(Cypress.env('incorrect_username'), Cypress.env('incorrect_password'))
+    cy.applicationLoginPokec(Cypress.env('incorrect_username'), Cypress.env('incorrect_password'))
     })
 
     it('user login should not be successful', () => {

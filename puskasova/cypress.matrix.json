@@ -4,10 +4,14 @@
     "pageLoadTimeout": 70000,
     "chromeWebSecurity": false,
     "env": {
-        "username": "Academyqa.superadmin@ness.com",
+        "username": "academyqa.superadmin@ness.com",
         "password": "ndS5E2O9*BQZ5P0gP",
         "incorrect_username": "fajnymail@fajnaadresa.com",
         "incorrect_password": "fajneheslo",
-        "corporate_username": "kristina.puskasova@ness.com"
-    }
+        "corporate_username": "kristina.puskasova@ness.com",
+        "apiUrl": "http://jsonplaceholder.typicode.com",
+        "OauthTokenURL": "https://cognito-idp.eu-central-1.amazonaws.com/",
+        "clientID": "6qpntb8qrhsilpu2m88ssroqek",
+        "aggregatorURL": "https://aggregator-dev.matrix.report",
+        "aws_team_id":"05a8f919-e193-4028-8dc9-4e8a43545411"    }
 }
