@@ -3,7 +3,7 @@ Cypress.Commands.add('applicationLogin', (username, password) => {
         console.log(err);
         return false;
     })
-    cy.visit('/')
+    cy.visit(Cypress.env('pokecURL'))
     cy.get('.LoginFormstyles__LoginButton-sc-1iebk76-2')
         .click()
     cy.get('.Form-sc-1mfmq26-0  :nth-child(1)  .Input-sc-1vv8hqf-0')
@@ -12,6 +12,15 @@ Cypress.Commands.add('applicationLogin', (username, password) => {
         .type(password)
     cy.get('.LoginFormstyles__MobileLoginMiddlePanel-sc-1iebk76-12 > .Form-sc-1mfmq26-0 > .Button-sc-1fngo4c-0')
         .click()
+})
+
+Cypress.Commands.add('loginToPokec', (username, password) => {
+    cy.get('.input-text')
+        .type(username)
+    cy.get('.input-password')
+        .type(password)
+    cy.get('form > .input-button')
+            .click()
 })
 
 

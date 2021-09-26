@@ -4,8 +4,12 @@
     "pageLoadTimeout": 70000,
     "chromeWebSecurity": false,
     "env": {
+        "pokecURL": "https://mpokec.azet.sk/",
+        "pokecURLforSendEmail":"https://mail.azet.sk/?i9=631ca94e6f92",
         "usernameAzet": "ZmoknutyJakPes",
         "passwordAzet": "TazkeHeslo123456",
+        "hermiona":"hermionagrangerova123@azet.sk",
+        "newRoom":"AdoJeFrajer",
         "incorrectUsername": "ZmoknuteKurca",
         "incorrectPassword": "FessNebezpecneHeslo",
         "username": "academyqa.superadmin@ness.com",
