@@ -1,4 +1,4 @@
-describe('Test velocity completition rate metric', () => {
+describe('Test Backlog details page', () => {
 
     before( ()=> {
         cy.LogInWoUi()

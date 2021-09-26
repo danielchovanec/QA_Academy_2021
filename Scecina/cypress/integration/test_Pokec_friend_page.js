@@ -11,7 +11,7 @@ describe('Test Friend page on Pokec', () => {
                   
     })
 
-    it('Check friends page', ()=> {
+    it('Check friends page is displayed', ()=> {
         cy.get('.efOGkC > .lazyload-wrapper > .sc-eHgmQL')
         .click()
         cy.get('.sc-hSdWYo > div > a')

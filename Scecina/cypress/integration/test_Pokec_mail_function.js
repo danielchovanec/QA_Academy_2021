@@ -1,4 +1,4 @@
-describe('Test Valid Login', () => {
+describe('Test mail funkcionalty in Pokec', () => {
 
     before(() => {
         Cypress.on('uncaught:exception', (err, runnable) => {
@@ -40,7 +40,7 @@ describe('Test Valid Login', () => {
         
         })
 
-        it('Check if the mail was sent', () => {
+    it('Check if the mail was sent', () => {
         cy.wait(1000)
         cy.get('#js_idfolderListItem_sent__ > .js_priecinok > .priecinok')
         .click();
