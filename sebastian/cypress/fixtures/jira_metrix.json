@@ -1,3 +1,5 @@
 {
-    "detail_velocity_page":"/team/05a8f919-e193-4028-8dc9-4e8a43545411/stats/jira"
+    "redirect_url": "/team/05a8f919-e193-4028-8dc9-4e8a43545411/stats/jira",
+    "detail_velocity_page":"/team/05a8f919-e193-4028-8dc9-4e8a43545411/stats/jira/details/velocity",
+    "throughput_url":"https://dev.matrix.report/team/05a8f919-e193-4028-8dc9-4e8a43545411/stats/jira/details/throughput"
 }

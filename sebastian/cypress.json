@@ -9,7 +9,7 @@
         "usernameAzet": "ZmoknutyJakPes",
         "passwordAzet": "TazkeHeslo123456",
         "hermiona":"hermionagrangerova123@azet.sk",
-        "newRoom":"AdoJeFrajer",
+        "newRoom":"FrajerAdko",
         "incorrectUsername": "ZmoknuteKurca",
         "incorrectPassword": "FessNebezpecneHeslo",
         "username": "academyqa.superadmin@ness.com",
@@ -18,7 +18,7 @@
         "OauthTokenURL": "https://cognito-idp.eu-central-1.amazonaws.com/",
         "clientId": "6qpntb8qrhsilpu2m88ssroqek",
         "aggregatorURL": "https://aggregator-dev.matrix.report",
-        "aws_team_id": "41224a47-d230-45e6-ac24-46bb9fcd4e72"
+        "aws_team_id": "05a8f919-e193-4028-8dc9-4e8a43545411"
   
     }
 }

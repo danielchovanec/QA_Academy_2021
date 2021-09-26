@@ -14,6 +14,20 @@ Cypress.Commands.add('applicationLogin', (username, password) => {
         .click()
 })
 
+Cypress.Commands.add('metrixLogin', (username, password) => {
+    cy.get('.Button_button__ZunwN')
+        .click()
+    cy.get('.panel-left-border > :nth-child(2) > :nth-child(1) > .cognito-asf > :nth-child(3) > #signInFormUsername')
+        .type(username)
+    cy.get('.panel-left-border > :nth-child(2) > :nth-child(1) > .cognito-asf > :nth-child(5) > #signInFormPassword')
+        .type(password)
+    cy.get('.panel-left-border > :nth-child(2) > :nth-child(1) > .cognito-asf > .btn')
+        .click()
+    
+    
+})
+
+
 Cypress.Commands.add('loginToPokec', (username, password) => {
     cy.get('.input-text')
         .type(username)
