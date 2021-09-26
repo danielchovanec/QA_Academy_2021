@@ -1,4 +1,4 @@
-Cypress.Commands.add('applicationLogin', (username, password) => {
+Cypress.Commands.add('applicationLoginMatrix', (username, password) => {
     cy.visit('/');
     cy.get('.Header_header__inner__2zz3f > .Button_button__ZunwN')
         .click()

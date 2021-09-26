@@ -1,5 +1,5 @@
 {
-    "baseUrl": "https://pokec.azet.sk",
+    "baseUrl": "https://dev.matrix.report",
     "defaultCommandTimeout": 3000,
     "chromeWebSecurity": false,
     "env": {
