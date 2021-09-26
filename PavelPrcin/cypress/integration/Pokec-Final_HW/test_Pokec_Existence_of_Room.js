@@ -7,7 +7,7 @@ describe("Test if created room exist", () => {
 
     cy.applicationLogin(Cypress.env("username"), Cypress.env("password"));
   });
-
+  // mobile Azet selctors
   it("see if room was created", () => {
     cy.get(".mi-ic-menu").click();
     cy.get(".link-rooms").click();

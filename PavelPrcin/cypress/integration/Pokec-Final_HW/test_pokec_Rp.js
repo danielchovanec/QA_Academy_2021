@@ -6,7 +6,7 @@ describe("Check Rp functionality", () => {
     });
     cy.applicationLogin(Cypress.env("username"), Cypress.env("password"));
   });
-
+  // sending Rp to friend
   it("RP opened and sent", () => {
     cy.get(".mi-ic-rp-notif").click();
     cy.get(".rpButton").click();

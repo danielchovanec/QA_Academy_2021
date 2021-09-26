@@ -8,7 +8,7 @@ describe("Testing Pokec login and creating a room", () => {
     cy.applicationLogin(Cypress.env("username"), Cypress.env("password"));
   });
   // mAzet selector for creat room
-  it("creat room", () => {
+  it("create room", () => {
     cy.get(".mi-ic-menu").click();
     cy.get(".link-rooms").click();
     cy.get(".Button-sc-1fngo4c-0").click();

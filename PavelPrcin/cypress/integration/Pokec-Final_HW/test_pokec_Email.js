@@ -9,6 +9,7 @@ describe("Send email functionality", () => {
 
     // cy.GDPRConsent();
   });
+  //sending email to myself and using removeAttr to avoid new tab open
   it("send email", () => {
     cy.get(".mi-ic-menu").click();
     cy.get(".link-email").invoke("removeAttr", "target").click();
@@ -22,6 +23,7 @@ describe("Send email functionality", () => {
     ).click();
     cy.get("#js_idfolderListItem_sent__ > .js_priecinok > .priecinok").click();
   });
+  //tbody contain sent email
   it("Check email", () => {
     cy.get("tbody").should("be.visible");
   });

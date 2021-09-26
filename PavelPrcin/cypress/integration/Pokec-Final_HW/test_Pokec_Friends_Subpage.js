@@ -7,6 +7,7 @@ describe("Testing if friends subpage is avaliable", () => {
 
     cy.applicationLogin(Cypress.env("username"), Cypress.env("password"));
   });
+  // mobile Azet selctors helps avoidnew tabs to be open
   it("chcek friend subpage", () => {
     cy.get(".mi-ic-menu").click();
     cy.get(".link-friends").click();
