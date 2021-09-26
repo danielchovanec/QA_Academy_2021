@@ -27,3 +27,18 @@ Cypress.Commands.add('roomRedirection', () => {
     cy.get('[href="https://pokec-sklo.azet.sk/miestnost/1/"]  .sc-bAeIUo')
         .click()
     })
+
+Cypress.Commands.add('friendPageLogin', (username, password) => {
+    cy.visit('/vowasgervgeitsxamy?i9=7332ca234567')
+    cy.get('.fc-cta-consent > .fc-button-label')
+    .click()
+    cy.get('.pokecUI-button')
+    .click();
+    cy.get('.input-text')
+        .type(username)
+    cy.get('.input-password')
+        .type(password)
+    cy.get('form > .input-button')
+       .click()
+         
+    })
