@@ -1,0 +1,12 @@
+{
+    "baseUrl": "https://pokec.azet.sk/",
+    "defaultCommandTimeout": 30000,
+    "pageLoadTimeout": 70000,
+    "chromeWebSecurity": false,
+    "env": {
+        "username": "esti19kiko77",
+        "password": "Abc123Cde#",
+        "email":"empy77@gmail.com",
+        "roomName":"cypressFakeRoom"
+    }
+}
