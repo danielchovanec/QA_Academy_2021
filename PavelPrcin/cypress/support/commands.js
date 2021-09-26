@@ -17,12 +17,6 @@ Cypress.Commands.add("applicationLogout", () => {
   cy.get(".link-logout").click();
 });
 
-// Cypress.Commands.add("PhotoAdd", () => {
-//   cy.get(".landing-page__step_content > .input-button").click();
-//   cy.get(".input-button--back").click();
-//   cy.get("form > .input-button").click();
-// });
-
 Cypress.Commands.add("GDPRConsent", () => {
   cy.get(".fc-cta-consent  .fc-button-label").click();
 });
@@ -33,21 +27,21 @@ Cypress.Commands.add("roomRedirection", () => {
   ).click();
 });
 
-/// MATRIX LOGIN LOGOUT
-Cypress.Commands.add("applicationLogin", (username, password) => {
-  cy.visit("/");
+// MATRIX LOGIN LOGOUT
+Cypress.Commands.add("applicationLoginMatrix", (usernameMX, passwordMX) => {
+  cy.visit("https://dev.matrix.report/");
   cy.get(".Header_header__inner__2zz3f > .Button_button__ZunwN").click();
   cy.get(
     ".panel-left-border :nth-child(2)  :nth-child(1)  .cognito-asf  :nth-child(3) > #signInFormUsername"
-  ).type(username);
+  ).type(usernameMX);
   cy.get(
     ".panel-left-border :nth-child(2) > :nth-child(1) .cognito-asf :nth-child(5) #signInFormPassword"
-  ).type(password);
+  ).type(passwordMX);
   cy.get(
     ".panel-left-border :nth-child(2) :nth-child(1)  .cognito-asf  .btn"
   ).click();
 });
-Cypress.Commands.add("applicationLogOut", () => {
-  cy.get(".ActiveUser_activeUserAvatar__3CZ9g").click();
-  cy.get("[data-cy=uiActiveUserMenuItemLoggout]").click();
-});
+// Cypress.Commands.add("applicationLogOut", () => {
+//   cy.get(".ActiveUser_activeUserAvatar__3CZ9g").click();
+//   cy.get("[data-cy=uiActiveUserMenuItemLoggout]").click();
+// });

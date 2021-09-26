@@ -8,6 +8,8 @@
     "env":{
         "username":"cyTestFake",
         "password": "pokec123",
+        "usernameMX": "academyqa.superadmin@ness.com",
+        "passwordMX": "ndS5E2O9*BQZ5P0gP",
         "invalidName": "badName",
         "invalidPasswor": "badPassword",
         "apiUrl": "http://jsonplaceholder.typicode.com"
