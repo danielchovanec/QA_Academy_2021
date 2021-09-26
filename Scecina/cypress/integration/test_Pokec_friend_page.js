@@ -6,11 +6,17 @@ describe('Test Friend page on Pokec', () => {
             return false;
     })
     
-        cy.friendPageLogin(Cypress.env('username'), Cypress.env('password'))
+    cy.applicationLogin(Cypress.env('username'), Cypress.env('password'))
+    cy.GDPR()  
                   
     })
 
     it('Check friends page', ()=> {
+        cy.get('.efOGkC > .lazyload-wrapper > .sc-eHgmQL')
+        .click()
+        cy.get('.sc-hSdWYo > div > a')
+        .invoke('removeAttr', 'target')
+        .click()
         cy.get('.profile-header__nick_link')
         .should('have.text', 'vowasgervgeitsxamy')
     })
