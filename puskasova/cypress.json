@@ -1,0 +1,15 @@
+{
+    "baseUrl": "https://pokec.azet.sk/",
+    "chromeWebSecurity": false,
+    "env": {
+        "username": "HermionaGrangerova123",
+        "password": "10bodovpreChrabromil",
+        "incorrect_username": "vymysleneMeno",
+        "incorrect_password": "vymysleneHeslo",
+        "apiUrl": "http://jsonplaceholder.typicode.com",
+        "roomName": "MySweetRoom1",
+        "emailAddress": "zmoknutyjakpes@azet.sk",
+        "text": "Ahoj",
+        "nickName": "ZmoknutyJakPes"
+    }
+}
