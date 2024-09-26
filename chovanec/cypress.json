@@ -1,0 +1,16 @@
+{
+    "baseUrl": "https://dev.matrix.report",
+    "defaultCommandTimeout": 3000,
+    "chromeWebSecurity": false,
+    "env": {
+        "username": "academyqa.superadmin@ness.com",
+        "password": "ndS5E2O9*BQZ5P0gP",
+        "usernamePokec": "Glum45",
+        "passwordPokec": "Glum45Glum45",
+        "usernamePokecStevo": "bbeni",
+        "passwordPokecStevo": "poloma561",
+        "incorrect_username": "Gandalf20",
+        "incorrect_password": "Gandalf20",
+        "apiUrl": "http://jsonplaceholder.typicode.com"
+    }
+}
